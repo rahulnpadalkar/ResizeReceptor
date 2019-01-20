@@ -1,0 +1,1 @@
+define("resize.receptor.store",[],function(){var e={},t=function(){};return t.storeDims=function(t,n){e[t]=n},t.registeredElem=function(t){return e.hasOwnProperty(t)},t.getDims=function(t){return e[t]},t.updateDims=function(t,n){e[t].width=n.width,e[t].height=n.height},t});

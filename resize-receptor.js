@@ -1,0 +1,1 @@
+define(['resize.receptor.core'], function(resizeReceptor) {'use strict';return resizeReceptor;});

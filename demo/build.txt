@@ -1,0 +1,6 @@
+
+resize-receptor.js
+----------------
+resizeReceptor/resize.receptor.store.js
+resizeReceptor/resize.receptor.core.js
+resize-receptor.js
