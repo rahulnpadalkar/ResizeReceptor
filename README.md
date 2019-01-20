@@ -33,7 +33,18 @@ You can find a working demo in demos folder.
 				e.elem.style.backgroundColor = "red";
 			}
     	});
-		
+
+
+### See it in action ###
+
+##### Works with contenteditable elements. #####
+
+<img src = "https://media.giphy.com/media/9DinKhZ5sgdRS5zPo6/giphy.gif" alt = "If you see this, then something is broken. Open demos instead"/> 
+
+##### Works with dynamically added content. #####
+
+<img src = "https://media.giphy.com/media/fQfSgPFGG2Hl97vbXP/giphy.gif" alt = "If you see this, then something is broken. Open demos instead"/> 
+
 ### WIP ###
 
 1. Accept jQuery object instead of Node and accept NodeList instead of array of nodes.
