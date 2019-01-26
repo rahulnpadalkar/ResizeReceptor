@@ -3,7 +3,7 @@ define('resize.receptor.core',['resize.receptor.store'],function(resizeStore) {
     var groupIdToCallbackMap = {};
 
     //Constructor Call
-    var ResizeReceptor = {};
+    var ResizeReceptor = {},observer;
 
     ResizeReceptor.initialize= function(options) {
         //This 
@@ -13,13 +13,17 @@ define('resize.receptor.core',['resize.receptor.store'],function(resizeStore) {
         }else if (!options.observeElem){
             options["observeElem"]=document.body;
         }
-        var observer = new MutationObserver(mutationHandler);
+        observer = new MutationObserver(mutationHandler);
         observer.observe(options.observeElem,{
             childList:true,
             subtree:true,
             attributes:true,
             attributeFilter:['style']
         });
+    }
+
+    ResizeReceptor.stopListening = function(){
+        observer.disconnect();
     }
 
     ResizeReceptor.listenTo = function(elements, callback) {    
