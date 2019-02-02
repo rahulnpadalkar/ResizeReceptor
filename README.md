@@ -1,3 +1,5 @@
+<img src="https://i.imgur.com/idEtP3s.png">
+
 # Resize Receptor #
 
 A library which allows you to run code on resize of elemets that you specify. Supports Internet Explorer 11,Microsoft Edge, Mozilla Firefox and Google Chrome out of the box.
